@@ -1,0 +1,8 @@
+<form (submit)="handleSubmit($event)" (ngSubmit)="registerUser()">
+    <!-- Form fields for user registration -->
+    <input type="text" [(ngModel)]="userData.username" name="username" placeholder="Username">
+    <input type="email" [(ngModel)]="userData.email" name="email" placeholder="Email">
+    <input type="password" [(ngModel)]="userData.password" name="password" placeholder="Password">
+    <button type="submit">Register</button>
+  </form>
+  
