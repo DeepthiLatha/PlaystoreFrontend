@@ -1,0 +1,19 @@
+<h1>Search Items</h1>
+  <div>
+    <label for="owner">Owner:</label>
+    <input type="text" id="owner">
+  </div>
+  <div>
+    <label for="visibility">Visibility:</label>
+    <select id="visibility">
+      <option value="">All</option>
+      <option value="Public">Public</option>
+      <option value="Private">Private</option>
+    </select>
+  </div>
+  <div>
+    <label for="feature">Feature:</label>
+    <input type="text" id="feature">
+  </div>
+  <button onclick="searchItems()">Search</button>
+  <div id="searchResults"></div>

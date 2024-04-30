@@ -1,8 +1,12 @@
+
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+
 * {
     font-family: 'Be Vietnam Pro', sans-serif;
     color: #555B6E;
 }
-body, p, h1 {
+body, p {
     margin: 0;
     padding: 0;
 }

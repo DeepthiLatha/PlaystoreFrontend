@@ -1,0 +1,8 @@
+.playstore{
+    color:#e72929;
+    display:flex;
+    align-items:center;
+    font-size:35px;
+    font-weight:700;
+    text-shadow: 2px 2px 4px rgba(241, 241, 241, 0.5);
+}
