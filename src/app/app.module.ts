@@ -5,17 +5,31 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { LoginComponent } from './login/login.component';
+import { RouterModule } from '@angular/router';
+import { ApplicationListComponent } from './application-list/application-list.component';
+import { ApplicationDetailComponent } from './application-detail/application-detail.component';
+import { CategoryNavComponent } from './category-nav/category-nav.component';
+import { AppRoutingModule } from './app-routing.module';
+// import{ RatingModule } from 'ng-starrating';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
     RegistrationComponent,
+    LoginComponent,
+    HomeComponent,
+    ApplicationListComponent,
+    ApplicationDetailComponent,
+    CategoryNavComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    FormsModule
+    FormsModule, 
+    RouterModule.forRoot([]),
+    AppRoutingModule
+    // RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

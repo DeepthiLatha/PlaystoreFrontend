@@ -1,1 +1,19 @@
-<p>{{ testData }}</p>
+<!-- home.component.html -->
+
+<header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/playstore-logo.png" alt="PlayStore Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/login">Login</a></li>
+        <li><a routerLink="/registration">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="content">
+    <app-category-nav></app-category-nav>
+  </div>
+  

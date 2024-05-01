@@ -1,0 +1,35 @@
+nav {
+    background-color: rgba(52, 152, 219, 0.7); /* Adjust the RGB values and opacity as needed */
+    padding: 10px 20px;
+    margin-top: 0;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  li:last-child {
+    margin-right: 0;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth color transition */
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #f39c12; /* Change color on hover */
+  }
+  

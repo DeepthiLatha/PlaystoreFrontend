@@ -13,4 +13,10 @@ export class UserService {
   registerUser(userData: any): Observable<any> {
     return this.http.post<any>(`${this.baseUrl}/register`, userData);
   }
+
+  findUser(username: string, password: string, role: string): Observable<any> {
+    const body = { username, password, role };
+    return this.http.post<any>(`${this.baseUrl}/findUser`, body);
+  }
+
 }

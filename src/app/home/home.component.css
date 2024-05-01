@@ -1,52 +1,47 @@
-.playstore {
-    color: rgb(51, 155, 196);
+/* home.component.css */
+
+header {
+    background-color: #3498db;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 80px;
-    font-size: 35px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(7, 6, 6, 0.5);
-}
-ul li{
-    list-style: none;
-}
-
-ul li a{
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust height as needed */
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .nav-links li:first-child {
+    margin-left: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
     text-decoration: none;
-}
-
-.logo{
-    background-color:rgb(88, 121, 139);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-    flex-direction: row;
-    font-size: 20px;
-}
-.logo ul{
-    display: flex;
-    flex-direction: row;
-}
-a{
-    color:white;
-    font-size: 20px;
-    margin: 0 30px ;
-}
-h2{
-    text-align: center;
-    color: #339BC4;
-    font-size: 40px;
     font-weight: bold;
-}
-.playstore:hover{
-    color: rgb(51, 155, 196);
-    font-size: 33px;
-}
-a:hover{
-    color: rgb(51, 155, 196);
-    font-size: 22px;
-    text-shadow: 2px 2px 4px rgba(7, 6, 6, 0.5);
-
-}
-
-
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #f39c12;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  

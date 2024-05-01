@@ -1,0 +1,15 @@
+<div class="search-container">
+  <input type="text" [(ngModel)]="searchQuery" placeholder="Search by name">
+  <button (click)="searchApplications()">Search</button>
+</div>
+
+<div class="details">
+  <div *ngIf="application">
+    <h2>{{ application.name }}</h2>
+    <p>{{ application.description }}</p>
+    <p>Release Date: {{ application.releaseDate }}</p>
+    <p>Version: {{ application.version }}</p>
+    <p>Ratings: {{ application.ratings }}</p>
+    <p>Genre: {{ application.genre }}</p>
+  </div>
+</div>

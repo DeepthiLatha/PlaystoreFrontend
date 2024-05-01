@@ -1,0 +1,11 @@
+<ul>
+  <li *ngFor="let app of applications">
+    <a routerLink="/applications/{{ app.id }}" class="app-link">
+      <img [src]="app.imageUrl" alt="{{ app.name }} Image" class="app-image">
+      <div class="content">
+        <div class="name">{{ app.name }}</div>
+        <div class="genre">{{ app.genre }}</div>
+      </div>
+    </a>
+  </li>
+</ul>

@@ -1,0 +1,19 @@
+<form>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" [(ngModel)]="username" required>
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required>
+    </div>
+    <div>
+        <label for="userType">Login as:</label>
+        <select id="userType" name="userType" [(ngModel)]="userType" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+    </div>
+    <button type="button" (click)="adminLogin()">Login as Admin</button>
+    <button type="button" (click)="userLogin()">Login as User</button>
+</form>

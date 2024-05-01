@@ -1,12 +1,19 @@
+// app-routing.module.ts
+
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { UserLoginComponent } from './user-login/user-login.component';
-import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
+import { ApplicationListComponent } from './application-list/application-list.component';
+import { ApplicationDetailComponent } from './application-detail/application-detail.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
 
 const routes: Routes = [
-  { path: 'user-registration', component: UserRegistrationComponent },
-  { path: 'user-login', component: UserLoginComponent },
-  { path: '', redirectTo: '/user-login', pathMatch: 'full' }
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'registration', component: RegistrationComponent},
+  { path: 'category/:category', component: ApplicationListComponent },
+  { path: 'application/:id', component: ApplicationDetailComponent },
 ];
 
 @NgModule({
@@ -14,3 +21,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+
