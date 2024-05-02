@@ -8,9 +8,10 @@ import { RegistrationComponent } from './registration/registration.component';
 import { LoginComponent } from './login/login.component';
 import { RouterModule } from '@angular/router';
 import { ApplicationListComponent } from './application-list/application-list.component';
-import { ApplicationDetailComponent } from './application-detail/application-detail.component';
+import { ApplicationDetailComponent } from './application-details/application-details.component';
 import { CategoryNavComponent } from './category-nav/category-nav.component';
 import { AppRoutingModule } from './app-routing.module';
+import { AllComponent } from './all/all.component';
 // import{ RatingModule } from 'ng-starrating';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     ApplicationListComponent,
     ApplicationDetailComponent,
-    CategoryNavComponent
+    CategoryNavComponent,
+    AllComponent
   ],
   imports: [
     BrowserModule,
@@ -34,4 +36,9 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { } 
+
+
+
+
+

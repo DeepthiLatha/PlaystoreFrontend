@@ -104,4 +104,14 @@ export class ApplicationService {
     return this.applications.filter(app => app.name.toLowerCase().includes(name.toLowerCase()));
   }
 
+  filterApplicationsByCategory(category: string): Application[] {
+  console.log(category);
+    if (category.toLowerCase() === 'All') {
+      console.log("All Categories");
+      return this.applications;
+    } else {
+      return this.applications.filter(app => app.genre.toLowerCase() === category.toLowerCase());
+    }
+  }
+
 }

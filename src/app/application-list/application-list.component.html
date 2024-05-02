@@ -1,5 +1,5 @@
 <ul>
-  <li *ngFor="let app of applications">
+  <li *ngFor="let app of filteredApplications">
     <a routerLink="/applications/{{ app.id }}" class="app-link">
       <img [src]="app.imageUrl" alt="{{ app.name }} Image" class="app-image">
       <div class="content">

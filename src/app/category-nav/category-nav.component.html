@@ -1,4 +1,4 @@
-
+<!-- 
 <nav>
     <ul>
       <li *ngFor="let category of categories">
@@ -6,4 +6,50 @@
       </li>
     </ul>
   </nav>
+
+  
+  
+
+
+     <nav>
+    <ul>
+      <li *ngFor="let category of categories" (click)="filterApplicationsByCategory(category)">
+        <a>{{ category }}</a>
+      </li>
+    </ul>
+  </nav>  --> 
+
+
+
+  <div class="category-nav">
+    <h2>Categories</h2>
+    <ul>
+      <!-- <li (click)="filterApplicationsByCategory('All')" [class.active]="showAllApplications">All</li> -->
+      <li *ngFor="let category of categories" (click)="filterApplicationsByCategory(category)" [class.active]="!showAllApplications && selectedCategory === category">{{ category }}</li>
+    </ul>
+  </div>
+  
+  <div *ngIf="filteredApplications.length > 0">
+    <ul>
+      <li *ngFor="let application of filteredApplications">
+        <!-- <a [routerLink]="['/application', application.id]">{{ application.name }}</a> -->
+        <a [routerLink]="['/application', application.id]">
+        <img [src]="application.imageUrl" alt="{{ application.name }} Image" class="app-image">
+      <div class="content">
+        <div class="name">{{ application.name }}</div>
+        <div class="genre">{{ application.genre }}</div>
+      </div>
+      </a>
+      </li>
+    </ul>
+  </div>
+<!--   
+  <div *ngIf="showAllApplications">
+    <h3>All Applications</h3>
+    <ul>
+      <li *ngFor="let application of filteredApplications">
+        <a [routerLink]="['/application', application.id]">{{ application.name }}</a>
+      </li>
+    </ul>
+  </div> -->
   

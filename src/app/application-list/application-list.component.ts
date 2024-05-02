@@ -1,5 +1,3 @@
-
-
 import { Component, OnInit } from '@angular/core';
 import { Application } from '../models/application';
 import { ApplicationService } from '../services/application.service';
@@ -10,11 +8,15 @@ import { ApplicationService } from '../services/application.service';
   styleUrls: ['./application-list.component.css']
 })
 export class ApplicationListComponent implements OnInit {
-  applications: Application[] = [];
+  filteredApplications: Application[] = [];
 
   constructor(private applicationService: ApplicationService) { }
 
   ngOnInit(): void {
-    this.applications = this.applicationService.getAllApplications();
+    this.loadFilteredApplications();
+  }
+
+  loadFilteredApplications(): void {
+    this.filteredApplications = this.applicationService.getAllApplications();
   }
 }

@@ -1,19 +1,19 @@
-<!-- home.component.html -->
+<header> 
+  <nav class="navbar">
+    <div class="logo">
+      <img src="assets/ps img.png" alt="PlayStore Logo" >
+      PlayStore
+    </div>
+    <ul class="nav-links">
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/login" routerLinkActive="active">Login</a></li>
+      <li><a routerLink="/registration" routerLinkActive="active">Signup</a></li>
+    </ul>
+  </nav>
+</header> 
 
-<header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="assets/playstore-logo.png" alt="PlayStore Logo">
-      </div>
-      <ul class="nav-links">
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/login">Login</a></li>
-        <li><a routerLink="/registration">Signup</a></li>
-      </ul>
-    </nav>
-  </header>
-  
-  <div class="content">
-    <app-category-nav></app-category-nav>
-  </div>
-  
+<div class="content">
+  <app-category-nav></app-category-nav> <br>
+  <app-application-details></app-application-details>
+  <app-application-list class="applicationList"></app-application-list>
+</div>

@@ -11,7 +11,7 @@ import { UserService } from '../services/user.service';
 export class LoginComponent {
   username: string = '';
   password: string = '';
-  userType: string = 'user'; // Default to user login
+  userType: string = 'user'; 
 
   constructor(
     private router: Router,
@@ -22,14 +22,14 @@ export class LoginComponent {
   adminLogin(): void {
     this.adminService.findAdmin(this.username, this.password, this.userType).subscribe(
       (admin) => {
-        // Handle successful admin login response
+     
         console.log('Admin logged in:', admin);
         alert('Admin logged in successfully');
         // Navigate to the home page
         // this.router.navigate(['/home']);
       },
       (error) => {
-        // Handle error
+      
         console.error('Error logging in as admin:', error);
         alert('Failed to login as admin. Please check your credentials.');
       }
@@ -39,14 +39,14 @@ export class LoginComponent {
   userLogin(): void {
     this.userService.findUser(this.username, this.password, this.userType).subscribe(
       (user) => {
-        // Handle successful user login response
+    
         console.log('User logged in:', user);
         alert('User logged in successfully');
         // Navigate to the home page
         // this.router.navigate(['/home']);
       },
       (error) => {
-        // Handle error
+      
         console.error('Error logging in as user:', error);
         alert('Failed to login as user. Please check your credentials.');
       }

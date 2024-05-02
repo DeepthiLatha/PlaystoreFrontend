@@ -1,7 +1,5 @@
-/* home.component.css */
-
 header {
-    background-color: #3498db;
+  background: linear-gradient(to right, #3498db, #6fb7e8);
     padding: 10px 20px;
   }
   
@@ -9,10 +7,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 10px;
   }
   
   .logo img {
-    height: 40px; /* Adjust height as needed */
+    height: 70px; 
+  }
+
+  .logo{
+    color: white;
+    font-weight: bold;
   }
   
   .nav-links {
@@ -45,3 +49,6 @@ header {
     padding: 20px;
   }
   
+  .applicationList{
+    display: block;
+  }
