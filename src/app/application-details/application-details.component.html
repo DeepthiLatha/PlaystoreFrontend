@@ -3,8 +3,10 @@
   <button (click)="searchApplications()">Search</button>
 </div>
 
+
 <div class="details">
   <div *ngIf="application">
+    <img [src]="application.imageUrl" alt="{{ application.name }} Image" class="app-image">
     <h2>{{ application.name }}</h2>
     <p>{{ application.description }}</p>
     <p>Release Date: {{ application.releaseDate }}</p>
@@ -12,4 +14,4 @@
     <p>Ratings: {{ application.ratings }}</p>
     <p>Genre: {{ application.genre }}</p>
   </div>
-</div> 
+</div>  

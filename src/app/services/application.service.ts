@@ -15,7 +15,9 @@ export class ApplicationService {
       releaseDate: '2015',
       version: '1.0',
       ratings: 4.5,
-      genre: 'Beauty'
+      genre: 'Beauty',
+      visibility: true,
+      review:'' 
     },
     {
       id: 2,
@@ -25,7 +27,9 @@ export class ApplicationService {
       releaseDate: '2012',
       version: '1.0',
       ratings: 4.7,
-      genre: 'Puzzle'
+      genre: 'Puzzle',
+      visibility: true,
+      review:''
     },
     {
       id: 3,
@@ -35,7 +39,9 @@ export class ApplicationService {
       releaseDate: '2018',
       version: '2.0',
       ratings: 4.2,
-      genre: 'Health & Fitness'
+      genre: 'Health & Fitness',
+      visibility: true,
+      review:''
     },
     {
       id: 4,
@@ -45,7 +51,9 @@ export class ApplicationService {
       releaseDate: '2016',
       version: '1.2',
       ratings: 4.3,
-      genre: 'Fashion'
+      genre: 'Fashion',
+      visibility: true,
+      review:''
     },
     {
       id: 5,
@@ -55,7 +63,9 @@ export class ApplicationService {
       releaseDate: '2017',
       version: '1.5',
       ratings: 4.8,
-      genre: 'Women'
+      genre: 'Women',
+      visibility: true,
+      review:''
     },
     {
       id: 6,
@@ -65,7 +75,9 @@ export class ApplicationService {
       releaseDate: '2019',
       version: '1.0',
       ratings: 4.6,
-      genre: 'Games'
+      genre: 'Games',
+      visibility: true,
+      review:''
     },
     {
       id: 7,
@@ -75,7 +87,9 @@ export class ApplicationService {
       releaseDate: '2020',
       version: '2.0',
       ratings: 4.9,
-      genre: 'Food & Drink'
+      genre: 'Food & Drink',
+      visibility: true,
+      review:''
     },
     {
       id: 8,
@@ -85,7 +99,9 @@ export class ApplicationService {
       releaseDate: '2018',
       version: '2.5',
       ratings: 4.4,
-      genre: 'Music'
+      genre: 'Music',
+      visibility: true,
+      review:''
     },
     
   ];
@@ -114,4 +130,15 @@ export class ApplicationService {
     }
   }
 
-}
+  addApplication(application: Application): void {
+    this.applications.push(application);
+  }
+
+  deleteApplication(id: number): void {
+    const index = this.applications.findIndex(app => app.id === id);
+    if (index !== -1) {
+      this.applications.splice(index, 1);
+    }
+  }
+
+}  

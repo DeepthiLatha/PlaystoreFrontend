@@ -5,17 +5,23 @@ import { ApplicationListComponent } from './application-list/application-list.co
 import { ApplicationDetailComponent } from './application-details/application-details.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
+import { CategoryNavComponent } from './category-nav/category-nav.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AddDeleteComponent } from './add-delete/add-delete.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'registration', component: RegistrationComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'registration', component: RegistrationComponent},
-  { path: 'categories/:categoryName', component: ApplicationListComponent }, 
+  { path: 'admin-home', component: AdminHomeComponent },
+  { path: 'add-delete', component: AddDeleteComponent },
+  { path: 'category-nav', component: CategoryNavComponent },
+  { path: 'category/:category', component: CategoryNavComponent }, 
   { path: 'application/:id', component: ApplicationDetailComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' } // Default route
 ];
 
-@NgModule({
+@NgModule({ 
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

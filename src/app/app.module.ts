@@ -11,8 +11,9 @@ import { ApplicationListComponent } from './application-list/application-list.co
 import { ApplicationDetailComponent } from './application-details/application-details.component';
 import { CategoryNavComponent } from './category-nav/category-nav.component';
 import { AppRoutingModule } from './app-routing.module';
-import { AllComponent } from './all/all.component';
-// import{ RatingModule } from 'ng-starrating';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { LogoutComponent } from './logout/logout.component';
+import { AddDeleteComponent } from './add-delete/add-delete.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,9 @@ import { AllComponent } from './all/all.component';
     ApplicationListComponent,
     ApplicationDetailComponent,
     CategoryNavComponent,
-    AllComponent
+    AdminHomeComponent,
+    LogoutComponent,
+    AddDeleteComponent,
   ],
   imports: [
     BrowserModule,

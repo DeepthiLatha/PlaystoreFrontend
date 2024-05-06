@@ -1,0 +1,60 @@
+<header> 
+    <nav class="navbar">
+      <div class="logo">
+        <img src="assets/ps img.png" alt="PlayStore Logo" >
+        PlayStore
+      </div>
+      <ul class="nav-links">
+        <li ><a routerLink="/admin-home" routerLinkActive="active">Home</a></li>
+        <li><a routerLink="/add-delete" routerLinkActive="active">Applications</a></li>
+        <li><a routerLink="/home" routerLinkActive="active">Logout</a></li>
+      </ul>
+    </nav>
+  </header> 
+
+<!-- Add button to toggle form visibility -->
+<div class="container">
+    <button class="add-application-btn" (click)="toggleFormVisibility()">Add Application</button>
+  </div>
+
+<!-- Form for adding applications (initially hidden) -->
+<form *ngIf="showForm" (ngSubmit)="addApplication()">
+  <label for="imageUrl">Image URL:</label>
+  <input type="text" [(ngModel)]="newApplication.imageUrl" name="imageUrl" required>
+  
+  <label for="name">Name:</label>
+  <input type="text" [(ngModel)]="newApplication.name" name="name" required>
+  
+  <label for="description">Description:</label>
+  <textarea [(ngModel)]="newApplication.description" name="description" required></textarea>
+  
+  <label for="releaseDate">Release Date:</label>
+  <input type="text" [(ngModel)]="newApplication.releaseDate" name="releaseDate" required>
+  
+  <label for="version">Version:</label>
+  <input type="text" [(ngModel)]="newApplication.version" name="version" required>
+  
+  <label for="ratings">Ratings:</label>
+  <input type="number" [(ngModel)]="newApplication.ratings" name="ratings" required>
+  
+  <label for="genre">Genre:</label>
+  <input type="text" [(ngModel)]="newApplication.genre" name="genre" required>
+  
+  <label for="visibility">Visibility:</label>
+  <select [(ngModel)]="newApplication.visibility" name="visibility" required>
+    <option value="true">True</option>
+    <option value="false">False</option>
+  </select>
+  
+  <label for="review">Review:</label>
+  <textarea [(ngModel)]="newApplication.review" name="review"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Display existing applications with delete buttons -->
+<div class="application-card" *ngFor="let application of applications">
+  <img [src]="application.imageUrl" alt="{{ application.name }}" width="100">
+  <span>{{ application.name }}</span>
+  <button class="delete-btn" (click)="deleteApplication(application.id)">Delete</button>
+</div>

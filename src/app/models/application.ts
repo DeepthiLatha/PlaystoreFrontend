@@ -7,4 +7,6 @@ export interface Application {
   version: string;
   ratings: number;
   genre: string;
+  visibility: boolean;
+  review: string;
 }

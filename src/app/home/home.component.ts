@@ -9,4 +9,9 @@ import { Router } from '@angular/router';
 export class HomeComponent {
 
   constructor(private router: Router) { }
+
+  isHomePage(): boolean {
+    return this.router.url === '/home';
+  }
+  
 }
