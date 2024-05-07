@@ -17,7 +17,8 @@ export class ApplicationService {
       ratings: 4.5,
       genre: 'Beauty',
       visibility: true,
-      review:'' 
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 2,
@@ -29,7 +30,8 @@ export class ApplicationService {
       ratings: 4.7,
       genre: 'Puzzle',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 3,
@@ -41,7 +43,8 @@ export class ApplicationService {
       ratings: 4.2,
       genre: 'Health & Fitness',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 4,
@@ -53,7 +56,8 @@ export class ApplicationService {
       ratings: 4.3,
       genre: 'Fashion',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 5,
@@ -65,7 +69,8 @@ export class ApplicationService {
       ratings: 4.8,
       genre: 'Women',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 6,
@@ -77,7 +82,8 @@ export class ApplicationService {
       ratings: 4.6,
       genre: 'Games',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 7,
@@ -89,7 +95,8 @@ export class ApplicationService {
       ratings: 4.9,
       genre: 'Food & Drink',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     {
       id: 8,
@@ -101,7 +108,8 @@ export class ApplicationService {
       ratings: 4.4,
       genre: 'Music',
       visibility: true,
-      review:''
+      review:'',
+      notifications:'No new notifications'
     },
     
   ];
@@ -140,5 +148,5 @@ export class ApplicationService {
       this.applications.splice(index, 1);
     }
   }
-
+ 
 }  

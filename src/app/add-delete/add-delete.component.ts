@@ -11,6 +11,7 @@ export class AddDeleteComponent implements OnInit {
   applications: Application[] = [];
   showForm: boolean = false;
   newApplication: Application = {
+    notifications: 'No new notifications',
     id: 0,
     imageUrl: '',
     name: '',
@@ -40,6 +41,7 @@ export class AddDeleteComponent implements OnInit {
     this.applicationService.addApplication(this.newApplication);
     // Clear the form fields
     this.newApplication = {
+      notifications: 'No new notifications',
       id: 0,
       imageUrl: '',
       name: '',
@@ -60,4 +62,4 @@ export class AddDeleteComponent implements OnInit {
     // Update the applications list after deletion
     this.applications = this.applicationService.getAllApplications();
   }
-}
+}  

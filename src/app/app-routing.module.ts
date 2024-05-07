@@ -8,11 +8,13 @@ import { RegistrationComponent } from './registration/registration.component';
 import { CategoryNavComponent } from './category-nav/category-nav.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AddDeleteComponent } from './add-delete/add-delete.component';
+import { LoginHomeComponent } from './login-home/login-home.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'registration', component: RegistrationComponent },
   { path: 'login', component: LoginComponent },
+  { path: 'login-home', component: LoginHomeComponent },
   { path: 'admin-home', component: AdminHomeComponent },
   { path: 'add-delete', component: AddDeleteComponent },
   { path: 'category-nav', component: CategoryNavComponent },

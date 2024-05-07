@@ -25,7 +25,7 @@ export class LoginComponent {
           console.log('User login successful:', response);
           alert('User login successful.'); 
           // Redirect to category-nav component after successful login
-          this.router.navigate(['/home']);
+          this.router.navigate(['/login-home']);
         },
         error => {
           console.error('User login failed:', error);

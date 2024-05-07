@@ -12,6 +12,8 @@
     </nav>
   </header>
 
+  <div class="login">
+
 <form (submit)="login()">
   <label for="username">Username:</label>
   <input type="text" [(ngModel)]="loginData.username" name="username" required>
@@ -24,3 +26,4 @@
   </select>
   <button type="submit">Login</button>
 </form>
+</div> 

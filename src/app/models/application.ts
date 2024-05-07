@@ -9,4 +9,5 @@ export interface Application {
   genre: string;
   visibility: boolean;
   review: string;
+  notifications: string;
 }

@@ -60,10 +60,12 @@
   
   /* Style for the form */
   form {
-    margin-bottom: 10px; /* Decreased margin */
+    width: 50%;
+    margin: 0 auto; 
+    margin-bottom: 10px;
     background-color: #f9f9f9;
     border-radius: 5px;
-    padding: 15px; /* Decreased padding */
+    padding: 15px;
   }
   
   form label {

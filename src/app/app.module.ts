@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { LogoutComponent } from './logout/logout.component';
 import { AddDeleteComponent } from './add-delete/add-delete.component';
+import { LoginHomeComponent } from './login-home/login-home.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { AddDeleteComponent } from './add-delete/add-delete.component';
     AdminHomeComponent,
     LogoutComponent,
     AddDeleteComponent,
+    LoginHomeComponent,
   ],
   imports: [
     BrowserModule,

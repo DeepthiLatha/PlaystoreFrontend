@@ -5,16 +5,15 @@
         PlayStore
       </div>
       <ul class="nav-links">
-        <li ><a routerLink="/admin-home" routerLinkActive="active">Home</a></li>
-        <li><a routerLink="/add-delete" routerLinkActive="active">Applications</a></li>
+        <li><a routerLink="/login-home" routerLinkActive="active">Home</a></li>
+        <!-- <li><a routerLink="/login" routerLinkActive="active">Login</a></li> -->
         <li><a routerLink="/home" routerLinkActive="active">Logout</a></li>
       </ul>
     </nav>
   </header> 
-
-  <main>
-    <app-category-nav></app-category-nav>
+  
+  <div class="content">
+    <app-category-nav class="category"></app-category-nav> <br>
     <app-application-details></app-application-details>
-    <app-application-list></app-application-list>
-  </main>
-
+    <app-application-list class="applicationList"></app-application-list>
+  </div>

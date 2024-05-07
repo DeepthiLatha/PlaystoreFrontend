@@ -20,5 +20,4 @@ export class AdminService {
     return this.http.post<any>(`${this.baseUrl}/register`, registrationData);
   }
   
-}
-
+}  
